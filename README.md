@@ -188,4 +188,42 @@ Repository Created SUccessfully with Default branch main
 26/05/2026::
 =============
 
-generate the ssh keys
+class Note::
+
+
+
+batch8 Note::
+===============
+
+>git clone <githuburl>   ----> clone the project code from remote to local
+
+>git clone https://github.com/srinfotechbatch8/SRINFOTECHBatch8.git
+
+enter
+
+>cd SRINFOTECHBatch8
+
+>git status    ---> check the status of files
+
+>git add --all  --->add the fiels which ever you modified/added
+>git status  ---> check the status of files
+
+>git push  --->push the changes from local to remote
+
+>ssh-keygen -t ed25519 -C "your_email@example.com"
+
+>ssh-keygen -t ed25519 -C "srinfotechbatch8@gmail.com"
+
+Your identification has been saved in /c/Users/HP/.ssh/id_ed25519    ---->private key
+Your public key has been saved in /c/Users/HP/.ssh/id_ed25519.pub    ----->pubic key
+
+
+>git clone
+>cd 
+>git status
+>git add --all
+>git commit -m "updated readme file & added new batch8 files"
+>git push
+
+
+>ssh-keygen -t ed25519 -C "srinfotechbatch8@hcl.com"
