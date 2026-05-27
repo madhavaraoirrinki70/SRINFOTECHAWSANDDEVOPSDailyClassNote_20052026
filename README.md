@@ -188,11 +188,281 @@ Repository Created SUccessfully with Default branch main
 26/05/2026::
 =============
 
-class Note::
+
+Generate SSHKeys:: to Integarte Git to Github
+==============================================
+
+syntax::ssh-keygen -t ed25519 -C "your_email@example.com"
+
+
+>ssh-keygen -t ed25519 -C "srinfotechbatch5@gmail.com"
+
+Keys avaibale path and save the key (/c/Users/HP/.ssh/id_ed25519):
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/036b310b-0c16-4bc1-b4ef-0bd479450509" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/148e65ae-7023-4b85-9c43-3edbaa9c04c7" />
+
+
+Please follow below links for more understanding 
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+Once genearted the keys (public/private) and copy public key to Github Account
+
+Go to -->Profile   ---->Settings  --->Click SSH and GPG keys
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/86dd201a-5866-4cf2-91d1-95bb6681c2ed" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d9e3ca96-1513-492e-af12-bdb06ae8ef8b" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1a68eb80-56d1-4d98-a3dd-38a537294ea7" />
+
+
+Click SSH and GPG Keys
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b1bdef8c-ca3d-4e84-80c3-635aa70daae6" />
 
 
 
-batch8 Note::
+
+click New SSH Key
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/885c10d5-30d3-47ca-bb59-4bf9e435512a" />
+
+
+
+
+Add new SSH Key and click Add SSH Key
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/26165149-3a7a-45ce-a239-376b6769d870" />
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6793bee5-44b5-4696-b948-453378739537" />
+
+
+Lab Practice::
+==============
+
+HP@DESKTOP-3GU6R56 MINGW64 ~
+$ ssh-keygen -t ed25519 -C "srinfotechbatch8@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/HP/.ssh/id_ed25519):
+Created directory '/c/Users/HP/.ssh'.
+Enter passphrase for "/c/Users/HP/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/HP/.ssh/id_ed25519
+Your public key has been saved in /c/Users/HP/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:svzlr1LVHaRYhbGP08xaCjFuYAPrObkE79fK3fcjOBs srinfotechbatch8@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|       .     o=o |
+|        o   o.o. |
+|     . . + + + ..|
+|      + + + + B .|
+|      .BS  = o * |
+|     .ooo + . =  |
+|      oo o.E.o   |
+|       .+oooo. o |
+|        .+o=+.o +|
++----[SHA256]-----+
+
+
+Fork in Github::
+====================
+
+In GitHub, forking is a way to create your own copy of someone else's repository. example please fork below project to your own github account
+
+https://github.com/srinfotechbatch8/SRINFOTECHBatch8.git
+
+steps to fork the project::
+============================
+
+Go to Above Project URL
+
+https://github.com/srinfotechbatch8/SRINFOTECHBatch8.git
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/45b0c823-863d-447b-943e-a32cbfc6cb65" />
+
+
+at top right we can found Fork option in github Account 
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/406477ce-4851-462c-9187-30e50320c4f7" />
+
+
+Click on Fork and click create Fork 
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f399adbd-d00c-4cd9-9dd3-9a0e16170aa5" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/59c07b24-f750-41ba-851c-4f2b6712ccaf" />
+
+
+Successfully Fork done from someone else's repository 
+
+once above steps done ,please clone the Project and Modified files and push to github repository
+
+
+Git Commands::
+================
+
+1. git clone <repository url>
+
+>git clone 
+
+>cd <repository name>
+
+>git status
+
+>git add --all
+
+after added the files we need to verify the status of the files
+
+>git status
+
+>git commit -m "message"
+
+>git push    ---> push the changes from local machine to remote
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+>ssh-keygen -t ed25519 -C "srinfotechbatch8@gmail.com"
+
+
+Lab Practice::
+=================
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest
+$ git clone git@github.com:srinfotechbatch8/SRINFOTECHBatch8.git
+Cloning into 'SRINFOTECHBatch8'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest
+$ cd SRINFOTECHBatch8
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git add --all
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git push
+Everything up-to-date
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git push
+Everything up-to-date
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git push origin main
+Everything up-to-date
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git pull
+Already up to date.
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git push
+Everything up-to-date
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Batch8.md
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git add --all
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Batch8.md
+        modified:   README.md
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git commit -m "updated readme file & added new batch8 files"
+[main 046ee6c] updated readme file & added new batch8 files
+ 2 files changed, 12 insertions(+), 14 deletions(-)
+ create mode 100644 Batch8.md
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:srinfotechbatch8/SRINFOTECHBatch8.git
+   c266d74..046ee6c  main -> main
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Batch8Latest/SRINFOTECHBatch8 (main)
+$
+
+
+batch8 class Note::
 ===============
 
 >git clone <githuburl>   ----> clone the project code from remote to local
