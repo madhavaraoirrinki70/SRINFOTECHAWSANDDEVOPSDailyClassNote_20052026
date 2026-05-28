@@ -497,3 +497,35 @@ Your public key has been saved in /c/Users/HP/.ssh/id_ed25519.pub    ----->pubic
 
 
 >ssh-keygen -t ed25519 -C "srinfotechbatch8@hcl.com"
+
+
+
+27/05/2026::
+=============
+
+please open below project url and fork into your github account
+
+https://github.com/srinfotechbatch8/java-hello-world-with-maven.git
+
+
+once forked the project , please try to clone the project into your local
+
+steps::
+
+>git clone git@github.com:srinfotechbatch8/java-hello-world-with-maven.git
+
+>cd java-hello-world-with-maven
+
+please made some changes in local files and please verify the status of the files
+
+>git status
+
+>git add --all
+
+>git status
+
+>git commit -m "commit message"
+
+>git push
+
+please complete above activity and let me know if you guys facing any issues
